@@ -1,0 +1,11 @@
+<mvc:View id="projectView" controllerName="Portfolio.controller.Project" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m">
+    <m:VBox id="projectVBox" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" items="{/}">
+        <m:items>
+            <m:CustomListItem>
+                <m:GenericTile header="{name}" subheader="{description}" frameType="TwoByHalf" press=".press">
+                    <m:TileContent />
+                </m:GenericTile>
+            </m:CustomListItem>
+        </m:items>
+    </m:VBox>
+</mvc:View>

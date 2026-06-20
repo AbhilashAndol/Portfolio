@@ -1,6 +1,24 @@
-<mvc:View controllerName="Portfolio.controller.Portfolio"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-    </Page>
+<mvc:View id="view" controllerName="Portfolio.controller.Portfolio"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.uxap"
+	xmlns:m="sap.m"
+	height="100%"
+	width="100%">
+	<ObjectPageLayout id="ObjectPageLayout" upperCaseAnchorBar="false">
+		<headerTitle>
+			<ObjectPageHeader id="ObjectPageHeader" objectTitle="SAP BTP Portfolio">
+			</ObjectPageHeader>
+		</headerTitle>
+
+		<headerContent>
+			<m:ObjectAttribute id="ObjectAttribute" text="This example explains the rules for the rendering of sections"/>
+		</headerContent>
+
+		<ObjectPageSection id="section1" titleUppercase="false" title="Section 1">
+			<ObjectPageSubSection id="subsection1" titleUppercase="false" title="Projects">
+				<mvc:XMLView id="XMLView" viewName="Portfolio.view.Project"/>
+			</ObjectPageSubSection>
+		</ObjectPageSection>
+
+	</ObjectPageLayout>
 </mvc:View>
