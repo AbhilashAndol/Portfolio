@@ -1,0 +1,2 @@
+sap.ui.define(["Portfolio/controller/Portfolio.controller"],function(o){"use strict";QUnit.module("Portfolio Controller");QUnit.test("I should test the Portfolio controller",function(t){var l=new o;l.onInit();t.ok(l)})});
+//# sourceMappingURL=Portfolio.controller.js.map
