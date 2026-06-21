@@ -1,0 +1,3 @@
+<mvc:View id="headerView" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.uxap" xmlns:m="sap.m">
+    <m:Avatar id="avatar" src="images/profile.jpg" displaySize="XL" class="sapUiTinyMarginEnd"/>
+</mvc:View>

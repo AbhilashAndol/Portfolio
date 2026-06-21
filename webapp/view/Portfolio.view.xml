@@ -6,19 +6,25 @@
 	width="100%">
 	<ObjectPageLayout id="ObjectPageLayout" upperCaseAnchorBar="false">
 		<headerTitle>
-			<ObjectPageHeader id="ObjectPageHeader" objectTitle="ANDOL ABHILASH">
-			</ObjectPageHeader>
+			<ObjectPageDynamicHeaderTitle id="headerSection">
+				<expandedHeading>
+					<m:Title id="title" text="Andol Abhilash" wrapping="true"/>
+				</expandedHeading>
+				<expandedContent>
+					<m:Text id="text" text="SAP BTP Full Stack Developer"/>
+				</expandedContent>
+			</ObjectPageDynamicHeaderTitle>
 		</headerTitle>
-
 		<headerContent>
-			<m:ObjectAttribute id="ObjectAttribute" text="This example explains the rules for the rendering of sections"/>
+			<mvc:XMLView id="headerContentView" viewName="Portfolio.view.headerContent"/>
 		</headerContent>
-
-		<ObjectPageSection id="section1" titleUppercase="false" title="Section 1">
-			<ObjectPageSubSection id="subsection1" titleUppercase="false" title="Projects">
-				<mvc:XMLView id="XMLView" viewName="Portfolio.view.Project"/>
-			</ObjectPageSubSection>
-		</ObjectPageSection>
+		<sections>
+			<ObjectPageSection id="section1" titleUppercase="false" title="Section 1">
+				<ObjectPageSubSection id="subsection1" titleUppercase="false" title="Projects">
+					<mvc:XMLView id="XMLView" viewName="Portfolio.view.Project"/>
+				</ObjectPageSubSection>
+			</ObjectPageSection>
+		</sections>
 
 	</ObjectPageLayout>
 </mvc:View>
