@@ -25,6 +25,12 @@
 				</ObjectPageSubSection>
 			</ObjectPageSection>
 		</sections>
-
+		<sections>
+			<ObjectPageSection id="section2" titleUppercase="false" title="Section 2">
+				<ObjectPageSubSection id="subsection2" titleUppercase="false" title="Skills">
+					<mvc:XMLView id="XMLskillsView" viewName="Portfolio.view.Skills"/>
+				</ObjectPageSubSection>
+			</ObjectPageSection>
+		</sections>
 	</ObjectPageLayout>
 </mvc:View>

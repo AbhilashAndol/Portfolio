@@ -7,7 +7,7 @@ sap.ui.define([
     return Controller.extend("Portfolio.controller.Project", {
         onInit: function () {
             var oProjectsModel = models.createProjectsModel();
-            this.getView().setModel(oProjectsModel);
+            this.getView().setModel(oProjectsModel,"projects");
         }
     });
 });

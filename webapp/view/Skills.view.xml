@@ -1,0 +1,16 @@
+<mvc:View id="skillsView" controllerName="Portfolio.controller.Skills" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m" xmlns:base="sap.ui.mdc.valuehelp.base">
+    <m:FlexBox id="skillsFlexBox" class="sapUiTinyMarginBegin sapUiTinyMarginTop" items="{skills>/}" wrap="Wrap">
+        <m:items>
+            <m:GenericTile id="skillBox" frameType="OneByHalf" header="{skills>name}"
+                press=".press" class="sapUiTinyMarginEnd sapUiTinyMarginBottom">
+                <m:TileContent id="tileContent1">
+                    <m:VBox id="skillVBox" fitContainer="true">
+                        <m:items>
+                            <m:ProgressIndicator id="skillProgress" percentValue="{skills>percentValue}" displayValue="{= ${skills>percentValue} + '%'}" width="100%" />
+                        </m:items>
+                    </m:VBox>
+                </m:TileContent>
+            </m:GenericTile>
+        </m:items>
+    </m:FlexBox>
+</mvc:View>
