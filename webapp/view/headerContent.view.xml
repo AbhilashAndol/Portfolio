@@ -1,3 +1,15 @@
-<mvc:View id="headerView" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.uxap" xmlns:m="sap.m">
-    <m:Avatar id="avatar" src="images/profile.jpg" displaySize="XL" class="sapUiTinyMarginEnd"/>
+<mvc:View id="headerView" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m" xmlns:layout="sap.ui.layout">
+    <m:FlexBox id="flexBox" wrap="Wrap">
+
+        <layout:HorizontalLayout id="horizontalLayout" class="sapUiSmallMarginBeginEnd">
+            <m:Avatar id="avatar" src="images/profile.jpg" displaySize="XL" class="sapUiTinyMarginEnd sapUiTinyMarginRight"/>
+            <m:Text id="largeText" text="About Me: SAP Developer " wrapping="true" class="sapUiLargeMarginTopBottom sapUiSmallMarginBeginEnd"/>
+        </layout:HorizontalLayout>
+
+        <layout:VerticalLayout id="verticalLayout" class="sapUiSmallMarginBeginEnd">
+            <m:ObjectStatus id="languageStatus" title="Language" text="English"/>
+            <m:ObjectStatus id="countryStatus" title="Country" text="India"/>
+            <m:ObjectStatus id="phoneStatus" title="Phone Number" text="+91 8501887278"/>
+        </layout:VerticalLayout>
+    </m:FlexBox>
 </mvc:View>
