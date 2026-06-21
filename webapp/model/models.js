@@ -24,7 +24,10 @@ function (JSONModel, Device) {
             var aProjects = [
                 { name: "Project A", description: "Description of Project A" },
                 { name: "Project B", description: "Description of Project B" },
-                { name: "Project C", description: "Description of Project C" }
+                { name: "Project C", description: "Description of Project C" },
+                { name: "Project D", description: "Description of Project D" },
+                { name: "Project E", description: "Description of Project E" },
+                { name: "Project F", description: "Description of Project F" }
             ];
             var oModel = new JSONModel(aProjects);
             oModel.setDefaultBindingMode("OneWay");
