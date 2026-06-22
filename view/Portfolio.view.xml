@@ -5,20 +5,29 @@
 	height="100%"
 	width="100%">
 	<ObjectPageLayout id="ObjectPageLayout" upperCaseAnchorBar="false">
-		<headerTitle>
-			<ObjectPageHeader id="ObjectPageHeader" objectTitle="ANDOL ABHILASH">
-			</ObjectPageHeader>
-		</headerTitle>
-
 		<headerContent>
-			<m:ObjectAttribute id="ObjectAttribute" text="This example explains the rules for the rendering of sections"/>
+			<mvc:XMLView id="HeaderView" viewName="Portfolio.view.Header"/>
 		</headerContent>
-
-		<ObjectPageSection id="section1" titleUppercase="false" title="Section 1">
-			<ObjectPageSubSection id="subsection1" titleUppercase="false" title="Projects">
-				<mvc:XMLView id="XMLView" viewName="Portfolio.view.Project"/>
-			</ObjectPageSubSection>
-		</ObjectPageSection>
-
+		<sections>
+			<ObjectPageSection id="section1" titleUppercase="false" title="Section 1">
+				<ObjectPageSubSection id="subsection1" titleUppercase="false" title="Projects">
+					<mvc:XMLView id="XMLView" viewName="Portfolio.view.Project"/>
+				</ObjectPageSubSection>
+			</ObjectPageSection>
+		</sections>
+		<sections>
+			<ObjectPageSection id="section2" titleUppercase="false" title="Section 2">
+				<ObjectPageSubSection id="subsection2" titleUppercase="false" title="Skills">
+					<mvc:XMLView id="XMLskillsView" viewName="Portfolio.view.Skills"/>
+				</ObjectPageSubSection>
+			</ObjectPageSection>
+		</sections>
+		<sections>
+			<ObjectPageSection id="section3" titleUppercase="false" title="Section 3">
+				<ObjectPageSubSection id="subsection3" titleUppercase="false" title="Certificates">
+					<mvc:XMLView id="XMLCertificatesView" viewName="Portfolio.view.Certificates"/>
+				</ObjectPageSubSection>
+			</ObjectPageSection>
+		</sections>
 	</ObjectPageLayout>
 </mvc:View>

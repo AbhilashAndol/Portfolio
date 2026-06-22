@@ -6,20 +6,26 @@ function (JSONModel, Device) {
     "use strict";
 
     return {
-        /**
-         * Provides runtime information for the device the UI5 app is running on as a JSONModel.
-         * @returns {sap.ui.model.json.JSONModel} The device model.
-         */
         createDeviceModel: function () {
             var oModel = new JSONModel(Device);
             oModel.setDefaultBindingMode("OneWay");
             return oModel;
         },
+        createHeaderContentModel: function () {
+            var oHeaderContentData = {
+                name: "Andol Abhilash",
+                title: "SAP BTP Full Stack Developer",
+                avatar: "images/profile.jpg",
+                about: "I am an SAP BTP Application Developer with 5 years of experience dedicated to transforming complex business workflows into seamless, automated digital experiences. Leveraging SAP CAP, Generative AI, and advanced automation tools, I build secure, intelligent cloud applications that drastically reduce manual effort and boost operational efficiency. Let’s build the future of enterprise technology together.",
+                email: "andolabhilash19@gmail.com",
+                linkedin: "www.linkedin.com/in/abhilash-andol-67594a1a4",
+                phone: "+91 8501887278"
+            };
+            var oModel = new JSONModel(oHeaderContentData);
+            oModel.setDefaultBindingMode("OneWay");
+            return oModel;
+        },
 
-        /**
-         * Creates a JSON model containing a list of projects with names and descriptions.
-         * @returns {sap.ui.model.json.JSONModel} The projects model.
-         */
         createProjectsModel: function () {
             var aProjects = [
                 { name: "Project A", description: "Description of Project A" },
@@ -32,7 +38,30 @@ function (JSONModel, Device) {
             var oModel = new JSONModel(aProjects);
             oModel.setDefaultBindingMode("OneWay");
             return oModel;
+        },
+
+        createSkillsModel: function () {
+            var aSkills = [
+                { name: "SAP Cloud Application Programming Model (CAPM)", percentValue: 80 },
+                { name: "SAPUI5", percentValue: 60 }
+            ];
+            var oModel = new JSONModel(aSkills);
+            oModel.setDefaultBindingMode("OneWay");
+            return oModel;
+        },
+
+        createCertificatesModel: function () {
+            var aCertificates = [
+                { name: "SAP Certified - SAP Generative AI Developer", date: "2026-01-15", link: "https://www.credly.com/badges/84d66c36-7adb-4a7a-8ef8-d141c46e65f0/public_url" },
+                { name: "SAP Certified Associate - Back-End Developer - ABAP Cloud", date: "2024-07-10", link: "https://www.credly.com/badges/13f5c32f-0a18-4cd3-880d-91dc22739a99/public_url" },
+                { name: "Creating Applications and Extensions Using SAP Build Code ", date: "2024-04-20", link: "https://www.credly.com/badges/9583db91-2646-41d4-97d3-91a9e294e666/public_url" },
+                { name: "SAP Certified Citizen Developer Associate - SAP Build Low-code/No-code Applications and Automations", date: "2025-12-05", link: "https://www.credly.com/badges/85aa3400-709b-407d-8fe8-6d94ea271bab/print" },
+            ];
+            var oModel = new JSONModel(aCertificates);
+            oModel.setDefaultBindingMode("OneWay");
+            return oModel;
         }
+
     };
 
 });

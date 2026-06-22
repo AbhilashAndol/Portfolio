@@ -1,0 +1,27 @@
+<mvc:View id="headerView" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m" xmlns:layout="sap.ui.layout" controllerName="Portfolio.controller.Header">
+    <m:FlexBox id="flexBox" wrap="Wrap" class="sapUiSmallMarginTop" width="100%">
+        <layout:HorizontalLayout id="horizontalLayout" class="sapUiSmallMarginBeginEnd" allowWrapping="false">
+            <m:Avatar id="avatar" src="{headerContent>/avatar}" displaySize="XL" class="sapUiTinyMarginEnd sapUiTinyMarginRight"/>
+            <layout:VerticalLayout id="verticalLayout" class="sapUiSmallMarginBeginEnd">
+                <m:FlexBox id="nameAndContact" justifyContent="SpaceBetween" alignItems="Center" width="90%">
+                    <m:FlexBox id="nameAndTitle" direction="Column" class="sapUiSmallMarginEnd">
+                        <m:Text id="nameText" text="{headerContent>/name}" wrapping="false" class="headerText"/>
+                        <m:Text id="titleText" text="{headerContent>/title}" wrapping="false"/>
+                    </m:FlexBox>
+                    <m:FlexBox id="contactButtons" direction="Column" class="sapUiSmallMarginEnd">
+                        
+                        <m:Button id="ResumeButton" text="Resume" icon="sap-icon://document-text" press="onResumePress"/>
+                    </m:FlexBox>
+                </m:FlexBox>
+                <m:Text id="aboutText" text="{headerContent>/about}" wrapping="true" width="90%"/>
+                <m:FlexBox id="contactDetails" justifyContent="SpaceBetween" alignItems="Center" class="sapUiSmallMarginTop" width="90%">
+                   <m:FlexBox id="contactInfo" direction="Row" justifyContent="SpaceBetween" alignItems="Center" class="sapUiSmallMarginEnd" width="60%">
+                       <m:Text id="emailText" text="email :{headerContent>/email}" wrapping="false"/>
+                       <m:Text id="phoneText" text="phone :{headerContent>/phone}" wrapping="false"/>
+                       <m:Button id="linkedin" icon="images/linkedin.png" press="onLinkedInPress"/>
+                   </m:FlexBox>
+                </m:FlexBox>
+            </layout:VerticalLayout>
+        </layout:HorizontalLayout>
+    </m:FlexBox>
+</mvc:View>

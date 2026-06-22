@@ -1,9 +1,9 @@
 <mvc:View id="projectView" controllerName="Portfolio.controller.Project" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m">
-    <m:FlexBox id="projectVBox" class="sapUiTinyMarginBegin sapUiTinyMarginTop" items="{/}" wrap="Wrap">
+    <m:FlexBox id="projectVBox" class="sapUiTinyMarginBegin sapUiTinyMarginTop" items="{projects>/}" wrap="Wrap">
         <m:items>
             <m:GenericTile id="projectTile"
-                header="{name}" 
-                subheader="{description}" 
+                header="{projects>name}" 
+                subheader="{projects>description}" 
                 frameType="TwoByHalf" 
                 press=".press"
                 class="sapUiTinyMarginEnd sapUiTinyMarginBottom">

@@ -4,7 +4,6 @@ sap.ui.define([
     "use strict";
 
     return Controller.extend("Portfolio.controller.Portfolio", {
-        onInit() {
-        }
+        onInit() {}
     });
 });

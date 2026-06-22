@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","Portfolio/model/models"],function(e,t){"use strict";return e.extend("Portfolio.controller.Certificates",{onInit:function(){var e=t.createCertificatesModel();this.getView().setModel(e,"certificates")},onViewCertificatePress:function(e){var t=e.getSource();var i=t.getBindingContext("certificates").getProperty("link");window.open(i,"_blank")}})});
+//# sourceMappingURL=Certificates.controller.js.map

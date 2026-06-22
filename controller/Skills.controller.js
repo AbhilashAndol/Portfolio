@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","Portfolio/model/models"],function(e,o){"use strict";return e.extend("Portfolio.controller.Skills",{onInit:function(){var e=o.createSkillsModel();this.getView().setModel(e,"skills")}})});
+//# sourceMappingURL=Skills.controller.js.map

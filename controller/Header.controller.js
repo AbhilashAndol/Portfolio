@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","Portfolio/model/models"],function(e,t){"use strict";return e.extend("Portfolio.controller.Header",{onInit:function(){var e=t.createHeaderContentModel();this.getView().setModel(e,"headerContent")},onLinkedInPress:function(){var e=this.getView().getModel("headerContent");var t=e.getProperty("/linkedin");if(t&&!t.startsWith("http")){t="https://"+t}window.open(t,"_blank")},onResumePress:function(){var e="documents/resume.pdf";window.open(e,"_blank")}})});
+//# sourceMappingURL=Header.controller.js.map
