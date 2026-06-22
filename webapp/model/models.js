@@ -11,6 +11,20 @@ function (JSONModel, Device) {
             oModel.setDefaultBindingMode("OneWay");
             return oModel;
         },
+        createHeaderContentModel: function () {
+            var oHeaderContentData = {
+                name: "Andol Abhilash",
+                title: "SAP BTP Full Stack Developer",
+                avatar: "images/profile.jpg",
+                about: "I am an SAP BTP Application Developer with 5 years of experience dedicated to transforming complex business workflows into seamless, automated digital experiences. Leveraging SAP CAP, Generative AI, and advanced automation tools, I build secure, intelligent cloud applications that drastically reduce manual effort and boost operational efficiency. Let’s build the future of enterprise technology together.",
+                email: "andolabhilash19@gmail.com",
+                linkedin: "www.linkedin.com/in/abhilash-andol-67594a1a4",
+                phone: "+91 8501887278"
+            };
+            var oModel = new JSONModel(oHeaderContentData);
+            oModel.setDefaultBindingMode("OneWay");
+            return oModel;
+        },
 
         createProjectsModel: function () {
             var aProjects = [
