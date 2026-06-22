@@ -34,7 +34,20 @@ function (JSONModel, Device) {
             var oModel = new JSONModel(aSkills);
             oModel.setDefaultBindingMode("OneWay");
             return oModel;
+        },
+
+        createCertificatesModel: function () {
+            var aCertificates = [
+                { name: "SAP Certified - SAP Generative AI Developer", date: "2026-01-15", link: "https://www.credly.com/badges/84d66c36-7adb-4a7a-8ef8-d141c46e65f0/public_url" },
+                { name: "SAP Certified Associate - Back-End Developer - ABAP Cloud", date: "2024-07-10", link: "https://www.credly.com/badges/13f5c32f-0a18-4cd3-880d-91dc22739a99/public_url" },
+                { name: "Creating Applications and Extensions Using SAP Build Code ", date: "2024-04-20", link: "https://www.credly.com/badges/9583db91-2646-41d4-97d3-91a9e294e666/public_url" },
+                { name: "SAP Certified Citizen Developer Associate - SAP Build Low-code/No-code Applications and Automations", date: "2025-12-05", link: "https://www.credly.com/badges/85aa3400-709b-407d-8fe8-6d94ea271bab/print" },
+            ];
+            var oModel = new JSONModel(aCertificates);
+            oModel.setDefaultBindingMode("OneWay");
+            return oModel;
         }
+
     };
 
 });
