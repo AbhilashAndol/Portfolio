@@ -2,7 +2,7 @@
     <m:FlexBox id="certificatesFlexBox" class="sapUiTinyMarginBegin sapUiTinyMarginTop" items="{certificates>/}" wrap="Wrap">
         <m:items>
             <m:GenericTile id="certificateBox" frameType="TwoByOne" headerImage="images/sap-logo.png" header="{certificates>name}"
-                class="sapUiTinyMarginEnd sapUiTinyMarginBottom">
+                class="sapUiSmallMarginEnd sapUiSmallMarginBottom customCertificateBg">
                 <m:TileContent id="certificateTileContent">
                     <m:VBox id="certificateVBox" fitContainer="true" class="sapUiSmallMargin sapUiSmallMarginTop">
                         <m:items>

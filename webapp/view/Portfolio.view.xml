@@ -5,7 +5,7 @@
 	height="100%"
 	width="100%">
 	<ObjectPageLayout id="ObjectPageLayout" upperCaseAnchorBar="false">
-		<headerContent>
+		<headerContent >
 			<mvc:XMLView id="HeaderView" viewName="Portfolio.view.Header"/>
 		</headerContent>
 		<sections>

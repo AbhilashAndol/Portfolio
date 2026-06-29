@@ -1,13 +1,14 @@
 <mvc:View id="projectView" controllerName="Portfolio.controller.Project" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m">
-    <m:FlexBox id="projectVBox" class="sapUiTinyMarginBegin sapUiTinyMarginTop" items="{projects>/}" wrap="Wrap">
+    <m:FlexBox id="projectVBox" class="sapUiTinyMarginBegin sapUiTinyMarginTop" items="{projects>/}" wrap="Wrap" justifyContent="Center">
         <m:items>
             <m:GenericTile id="projectTile"
                 header="{projects>name}" 
-                subheader="{projects>description}" 
-                frameType="TwoByHalf" 
+                frameType="TwoByOne"
                 press=".press"
-                class="sapUiTinyMarginEnd sapUiTinyMarginBottom">
-                <m:TileContent id="tileContent"/>
+                class="sapUiLargeMarginEnd sapUiLargeMarginBottom customTileBg">
+                <m:TileContent id="tileContent" class="sapUiNoMarginTop sapUiContentPadding">
+                    <m:Text id="projectText" text="{projects>description}" wrapping="true" maxLines="5" />
+                </m:TileContent>
             </m:GenericTile>
         </m:items>
     </m:FlexBox>

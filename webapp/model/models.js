@@ -28,12 +28,12 @@ function (JSONModel, Device) {
 
         createProjectsModel: function () {
             var aProjects = [
-                { name: "Project A", description: "Description of Project A" },
-                { name: "Project B", description: "Description of Project B" },
-                { name: "Project C", description: "Description of Project C" },
-                { name: "Project D", description: "Description of Project D" },
-                { name: "Project E", description: "Description of Project E" },
-                { name: "Project F", description: "Description of Project F" }
+                { name: "SAP CAPM & Build Code Expertise", description: "Developed end-to-end enterprise applications leveraging SAP Cloud Application Programming Model (CAP) with Fiori, UI5, and Node.js, incorporating XSUAA for secure authentication and authorization. Designed robust data models, services, and custom UI components using XML views, fragments, controllers, and annotations.Implemented custom handlers, managed deployments, and maintained code repositories via Git. Utilized SAP Business Application Studio (BAS), VS Code, and GitHub Copilot for efficient development and delivery of scalable solutions." },
+                { name: "SAP AI Core & Launchpad Expertise", description: "Leveraged SAP AI Launchpad and GenAI Hub to design and optimize prompts using the Prompt Editor, grounding techniques, and Orchestrator for intelligent automation. Possess knowledge of Retrieval-Augmented Generation (RAG) implementation and hands-on experience in developing AI-driven solutions with Python for advanced business scenarios" },
+                { name: "SAP Build Apps & SBPA Expertise", description: "Designed and developed SAP Build Apps and SBPA bots to automate business processes, integrating applications with SBPA using Destinations, Actions, Decisions, and Document Management Service, triggers. Provided strategic consulting to business teams through weekly sessions, improving application usability and ensuring alignment with organizational goals." },
+                { name: "Manager Insights Dashboard (SAP Build Apps + HANA)", description: "Built a dashboard enabling CRUD operations on HANA data via SAP Build Apps, empowering managers with real-time insights." },
+                { name: "Sales Order Automation (SAP DOX + BPA)", description: "Automated sales order creation from PDFs using SAP Document Information Extraction, workflows and BPA, reducing manual data entry and improving accuracy" },
+                { name: "ABAP Code Remediation with UiPath & GitHub Copilot", description: "Automated ATC check failure fixes using UiPath Re-Framework and GitHub Copilot, python, reducing debugging time." }
             ];
             var oModel = new JSONModel(aProjects);
             oModel.setDefaultBindingMode("OneWay");
@@ -43,7 +43,12 @@ function (JSONModel, Device) {
         createSkillsModel: function () {
             var aSkills = [
                 { name: "SAP Cloud Application Programming Model (CAPM)", percentValue: 80 },
-                { name: "SAPUI5", percentValue: 60 }
+                { name: "SAP UI5", percentValue: 60 },
+                { name: "SAP Fiori", percentValue: 70 },
+                { name: "SAP BTP", percentValue: 70 },
+                { name: "Generative AI", percentValue: 65 },
+                { name: "SAP Build Apps", percentValue: 90 },
+                { name: "SAP Build Process Automation", percentValue: 90 }
             ];
             var oModel = new JSONModel(aSkills);
             oModel.setDefaultBindingMode("OneWay");

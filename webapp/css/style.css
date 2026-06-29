@@ -4,3 +4,25 @@
     font-size: 2rem; /* Adjust the size as needed */
     font-weight: bold;
 }
+
+.myPortfolioHeader {
+    /* Uses the standard brand theme color (usually SAP Blue) */
+    background-color: var(--sapBrandColor); 
+    
+    /* Makes your text white or light so it's readable against the brand color */
+    color: var(--sapContent_ContrastTextColor); 
+}
+
+/* This forces the background color on your header view container */
+.customTileBg {
+    background-color: #E6F2F7 !important; /* Replace with your choice (e.g., #E6F2F7 is a soft light blue) */
+    width: 100%;
+}
+
+.customSkillBg {
+    background-color: #e0faf0da !important; /* Ensures the tile itself also has the same background */
+}
+
+.customCertificateBg {
+    background-color: #e1e0ecda !important; /* Ensures the tile itself also has the same background */
+}
