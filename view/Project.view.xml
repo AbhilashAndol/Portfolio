@@ -5,7 +5,7 @@
                 header="{projects>name}" 
                 frameType="TwoByOne"
                 press=".press"
-                class="sapUiLargeMarginEnd sapUiLargeMarginBottom customTileBg">
+                class="sapUiSmallMarginEnd sapUiSmallMarginBottom customTileBg">
                 <m:TileContent id="tileContent" class="sapUiNoMarginTop sapUiContentPadding">
                     <m:Text id="projectText" text="{projects>description}" wrapping="true" maxLines="5" />
                 </m:TileContent>

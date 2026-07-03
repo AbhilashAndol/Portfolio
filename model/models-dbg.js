@@ -19,7 +19,8 @@ function (JSONModel, Device) {
                 about: "I am an SAP BTP Application Developer with 5 years of experience dedicated to transforming complex business workflows into seamless, automated digital experiences. Leveraging SAP CAP, Generative AI, and advanced automation tools, I build secure, intelligent cloud applications that drastically reduce manual effort and boost operational efficiency. Let’s build the future of enterprise technology together.",
                 email: "andolabhilash19@gmail.com",
                 linkedin: "www.linkedin.com/in/abhilash-andol-67594a1a4",
-                phone: "+91 8501887278"
+                phone: "+91 8501887278",
+                blog: "https://community.sap.com/t5/technology-blog-posts-by-members/sales-order-creation-using-dox-and-sap-build-process-automation/ba-p/13580989"
             };
             var oModel = new JSONModel(oHeaderContentData);
             oModel.setDefaultBindingMode("OneWay");
@@ -33,7 +34,8 @@ function (JSONModel, Device) {
                 { name: "SAP Build Apps & SBPA Expertise", description: "Designed and developed SAP Build Apps and SBPA bots to automate business processes, integrating applications with SBPA using Destinations, Actions, Decisions, and Document Management Service, triggers. Provided strategic consulting to business teams through weekly sessions, improving application usability and ensuring alignment with organizational goals." },
                 { name: "Manager Insights Dashboard (SAP Build Apps + HANA)", description: "Built a dashboard enabling CRUD operations on HANA data via SAP Build Apps, empowering managers with real-time insights." },
                 { name: "Sales Order Automation (SAP DOX + BPA)", description: "Automated sales order creation from PDFs using SAP Document Information Extraction, workflows and BPA, reducing manual data entry and improving accuracy" },
-                { name: "ABAP Code Remediation with UiPath & GitHub Copilot", description: "Automated ATC check failure fixes using UiPath Re-Framework and GitHub Copilot, python, reducing debugging time." }
+                { name: "ABAP Code Remediation with UiPath & GitHub Copilot", description: "Automated ATC check failure fixes using UiPath Re-Framework and GitHub Copilot, python, reducing debugging time." },
+                { name: "SAP Ui5 Freestyle & Side-By-side Extension", description:"Successfully designed, developed, and deployed a frontend application on SAP BTP, and integrated it with SAP Sales and Service Cloud Version 2 (SSCv2) as a mashup to support business-specific requirements."}
             ];
             var oModel = new JSONModel(aProjects);
             oModel.setDefaultBindingMode("OneWay");

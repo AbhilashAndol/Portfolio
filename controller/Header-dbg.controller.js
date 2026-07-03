@@ -6,13 +6,13 @@ sap.ui.define([
 
     return Controller.extend("Portfolio.controller.Header", {
         onInit: function () {
-            var oHeaderModel = models.createHeaderContentModel();
+            let oHeaderModel = models.createHeaderContentModel();
             this.getView().setModel(oHeaderModel, "headerContent");
         },
 
         onLinkedInPress: function () {
-            var oHeaderModel = this.getView().getModel("headerContent");
-            var sLinkedInUrl = oHeaderModel.getProperty("/linkedin");
+            let oHeaderModel = this.getView().getModel("headerContent");
+            let sLinkedInUrl = oHeaderModel.getProperty("/linkedin");
 
             // Ensure the LinkedIn URL is correctly formatted
             if (sLinkedInUrl && !sLinkedInUrl.startsWith("http")) {
@@ -23,8 +23,14 @@ sap.ui.define([
         },
 
         onResumePress: function () {
-            var sResumeUrl = "documents/resume.pdf";
+            let sResumeUrl = "documents/resume.pdf";
             window.open(sResumeUrl, "_blank");
+        },
+
+        onBlogInPress: function(){
+            let oHeaderModel = this.getView().getModel("headerContent");
+            let sblogInUrl = oHeaderModel.getProperty("/blog");
+            window.open(sblogInUrl, "_blank");
         }
 
     });

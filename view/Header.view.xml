@@ -35,7 +35,8 @@
                 <m:FlexBox id="ghRowContactRibbon" direction="Row" wrap="Wrap" alignItems="Center" justifyContent="Start" width="100%">
                     <m:Text id="txtContactEmail" text="Email: {headerContent>/email}" wrapping="true" class="sapUiMediumMarginEnd sapUiSmallMarginBottom"/>
                     <m:Text id="txtContactPhone" text="Phone: {headerContent>/phone}" wrapping="true" class="sapUiMediumMarginEnd sapUiSmallMarginBottom"/>
-                    <m:Button id="btnLinkedInLink" icon="images/linkedin.png" press="onLinkedInPress" class="sapUiSmallMarginBottom"/>
+                    <m:Button id="btnLinkedInLink" icon="images/linkedin.png" press="onLinkedInPress" class="sapUiMediumMarginEnd sapUiSmallMarginBottom"/>
+                    <m:Button id="btnBlog" icon="sap-icon://notes" text = "Blog" press = "onBlogInPress" class="sapUiSmallMarginBottom"/>
                 </m:FlexBox>
                 
             </layout:VerticalLayout>
