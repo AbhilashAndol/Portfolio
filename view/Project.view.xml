@@ -13,9 +13,6 @@
                         
                         <!-- Top part: Your description -->
                         <m:Text id="projectText" text="{projects>description}" wrapping="true" maxLines="3" class="sapUiTinyMarginBottom" />
-                        <m:HBox id="skillsHBox" wrap="Wrap" class="sapUiTinyMarginTop" items="{projects>skills}">
-                            <m:Button id="skillButton" text="{projects>}" class="sapUiTinyMarginEnd sapUiTinyMarginBottom " />
-                        </m:HBox>
                         
                     </m:VBox>
                     

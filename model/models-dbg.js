@@ -29,8 +29,8 @@ function (JSONModel, Device) {
 
         createProjectsModel: function () {
             var aProjects = [
-                { name: "Travel Pre-Approval App", description: "Developed end-to-end enterprise applications leveraging SAP Cloud Application Programming Model (CAP) with Fiori, UI5, and Node.js, incorporating XSUAA for secure authentication and authorization. Designed robust data models, services, and custom UI components using XML views, fragments, controllers, and annotations.Implemented custom handlers, managed deployments, and maintained code repositories via Git. Utilized SAP Business Application Studio (BAS), VS Code, and GitHub Copilot for efficient development and delivery of scalable solutions.", skills : ["SAPUI5", "CAPM"] },
-                { name: "Questionnaire App", description: "Developed a comprehensive questionnaire application to collect and analyze user feedback, enhancing customer satisfaction and product development." },
+                { name: "Travel Pre-Approval App", description: "Developed end-to-end enterprise applications leveraging SAP Cloud Application Programming Model (CAP) with Fiori, UI5, and Node.js, incorporating XSUAA for secure authentication and authorization. Designed robust data models, services, and custom UI components using XML views, fragments, controllers, and annotations.Implemented custom handlers, managed deployments, and maintained code repositories via Git. Utilized SAP Business Application Studio (BAS), VS Code, and GitHub Copilot for efficient development and delivery of scalable solutions."},
+                { name: "Questionnaire App", description: "Developed a comprehensive, multi-app Questionnaire Platform designed to collect and analyze user feedback for enhanced product development. The system features an intuitive wizard-based frontend for seamless user submissions, a dynamic administration portal for real-time form and question management, and a dedicated review application that empowers stakeholders to analyze data and make informed business decisions." },
                 { name: "SAP AI Core & Launchpad Expertise", description: "Leveraged SAP AI Launchpad and GenAI Hub to design and optimize prompts using the Prompt Editor, grounding techniques, and Orchestrator for intelligent automation. Possess knowledge of Retrieval-Augmented Generation (RAG) implementation and hands-on experience in developing AI-driven solutions with Python for advanced business scenarios" },
                 { name: "SAP Build Apps & SBPA Expertise", description: "Designed and developed SAP Build Apps and SBPA bots to automate business processes, integrating applications with SBPA using Destinations, Actions, Decisions, and Document Management Service, triggers. Provided strategic consulting to business teams through weekly sessions, improving application usability and ensuring alignment with organizational goals." },
                 { name: "Manager Insights Dashboard (SAP Build Apps + HANA)", description: "Built a dashboard enabling CRUD operations on HANA data via SAP Build Apps, empowering managers with real-time insights." },
@@ -45,8 +45,8 @@ function (JSONModel, Device) {
 
         createSkillsModel: function () {
             var aSkills = [
-                { name: "SAP Cloud Application Programming Model (CAPM)", percentValue: 80 },
-                { name: "SAP UI5", percentValue: 60 },
+                { name: "SAP Cloud Application Programming Model (CAPM)", percentValue: 90 },
+                { name: "SAP UI5", percentValue: 70 },
                 { name: "SAP Fiori", percentValue: 70 },
                 { name: "SAP BTP", percentValue: 70 },
                 { name: "Generative AI", percentValue: 65 },
