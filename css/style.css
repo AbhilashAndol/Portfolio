@@ -26,3 +26,7 @@
 .customCertificateBg {
     background-color: #e1e0ecda !important; /* Ensures the tile itself also has the same background */
 }
+
+.myCustomHeaderBg {
+    background-color: #f3f8dca6 !important; /* Ensures the tile itself also has the same background */
+}

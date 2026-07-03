@@ -4,10 +4,21 @@
             <m:GenericTile id="projectTile"
                 header="{projects>name}" 
                 frameType="TwoByOne"
-                press=".press"
+                press=".onProjectInPress"
                 class="sapUiSmallMarginEnd sapUiSmallMarginBottom customTileBg">
                 <m:TileContent id="tileContent" class="sapUiNoMarginTop sapUiContentPadding">
-                    <m:Text id="projectText" text="{projects>description}" wrapping="true" maxLines="5" />
+                    
+                    <!-- 1. We wrap everything inside a VBox so the skills stay safely under the text -->
+                    <m:VBox id="projectVBox1" height="100%">
+                        
+                        <!-- Top part: Your description -->
+                        <m:Text id="projectText" text="{projects>description}" wrapping="true" maxLines="3" class="sapUiTinyMarginBottom" />
+                        <m:HBox id="skillsHBox" wrap="Wrap" class="sapUiTinyMarginTop" items="{projects>skills}">
+                            <m:Button id="skillButton" text="{projects>}" class="sapUiTinyMarginEnd sapUiTinyMarginBottom " />
+                        </m:HBox>
+                        
+                    </m:VBox>
+                    
                 </m:TileContent>
             </m:GenericTile>
         </m:items>
