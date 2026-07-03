@@ -1,4 +1,4 @@
-<mvc:View id="headerView" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m" xmlns:layout="sap.ui.layout" controllerName="Portfolio.controller.Header">
+<mvc:View id="headerView" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m" xmlns:layout="sap.ui.layout" controllerName="Portfolio.controller.Header" class = "myCustomHeaderBg">
     <!-- Main wrapper container with Standard Theme Background and Padding -->
     <m:FlexBox id="gvMainContainer" wrap="Wrap" class="sapUiSmallMarginTop sapUiTileBackground sapUiContentPadding" width="100%">
         

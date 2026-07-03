@@ -1,0 +1,16 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Dialog id="projectDetailsDialog" title="{projects>name}">
+        <content>
+            <!-- This is where your details live -->
+            <VBox  id="vBoxProjectDetails" class="sapUiSmallMargin">
+                <Text id="txtProjectDescription" text="{projects>description}" />
+            </VBox>
+        </content>
+        <beginButton>
+            <!-- A button inside the dialog footer to close it -->
+            <Button id="btnCloseDetails" text="Close" press="onCloseDetails" />
+        </beginButton>
+    </Dialog>
+</core:FragmentDefinition>
