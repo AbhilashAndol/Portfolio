@@ -16,7 +16,7 @@ function (JSONModel, Device) {
                 name: "Andol Abhilash",
                 title: "SAP BTP Full Stack Developer",
                 avatar: "images/profile.jpg",
-                about: "I am an SAP BTP Application Developer with 5 years of experience dedicated to transforming complex business workflows into seamless, automated digital experiences. Leveraging SAP CAP, Generative AI, and advanced automation tools, I build secure, intelligent cloud applications that drastically reduce manual effort and boost operational efficiency. Let’s build the future of enterprise technology together.",
+                about: "I am an SAP BTP Application Developer with 5 years of experience bridging the gap between complex workflows and intelligent automation.Leveraging SAP Cloud Application Programming Model(CAP), Generative AI, and advanced automation tools like SAP Build Process Automation (SBPA) and SAP AI Launchpad, I design and deploy secure, full-stack cloud applications on SAP BTP. From embedding Document Information Extraction to configuring secure cross-app integrations, my focus is on eliminating manual overhead and driving operational efficiency.",
                 email: "andolabhilash19@gmail.com",
                 linkedin: "www.linkedin.com/in/abhilash-andol-67594a1a4",
                 phone: "+91 8501887278",
