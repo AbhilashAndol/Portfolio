@@ -30,3 +30,7 @@
 .myCustomHeaderBg {
     background-color: #f3f8dca6 !important; /* Ensures the tile itself also has the same background */
 }
+
+.myItalicBio {
+    font-style: italic;
+}

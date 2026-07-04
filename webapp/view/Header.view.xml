@@ -24,7 +24,7 @@
             <layout:VerticalLayout id="vlProfileBody" class="sapUiSmallMarginBeginEnd" width="100%">
                 
                 <!-- Short Bio / About Section -->
-                <m:Text id="txtAboutMe" text="{headerContent>/about}" wrapping="true" width="100%" class="sapUiSmallMarginBottom"/>
+                <m:Text id="txtAboutMe" text="{headerContent>/about}" wrapping="true" width="100%" class="sapUiSmallMarginBottom myItalicBio"/>
 
                 <!-- ROW 3: Standardized Contact Info Ribbon -->
                 <m:FlexBox id="ghRowContactRibbon" direction="Row" wrap="Wrap" alignItems="Center" justifyContent="Start" width="100%">
