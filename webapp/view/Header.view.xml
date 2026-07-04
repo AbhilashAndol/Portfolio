@@ -17,11 +17,6 @@
                         <m:Text id="txtProfileTitle" text="{headerContent>/title}" wrapping="true"/>
                     </m:FlexBox>
                 </m:FlexBox>
-
-                <!-- Right side group: Pushes Resume button cleanly to the top-right corner -->
-                <m:FlexBox id="ghGroupActionButtons" direction="Row" justifyContent="End" class="sapUiSmallMarginEnd">
-                    <m:Button id="btnDownloadResume" text="Resume" icon="sap-icon://document-text" press="onResumePress"/>
-                </m:FlexBox>
                 
             </m:FlexBox>
             
@@ -36,7 +31,8 @@
                     <m:Text id="txtContactEmail" text="Email: {headerContent>/email}" wrapping="true" class="sapUiMediumMarginEnd sapUiSmallMarginBottom"/>
                     <m:Text id="txtContactPhone" text="Phone: {headerContent>/phone}" wrapping="true" class="sapUiMediumMarginEnd sapUiSmallMarginBottom"/>
                     <m:Button id="btnLinkedInLink" icon="images/linkedin.png" press="onLinkedInPress" class="sapUiMediumMarginEnd sapUiSmallMarginBottom"/>
-                    <m:Button id="btnBlog" icon="sap-icon://notes" text = "Blog" press = "onBlogInPress" class="sapUiSmallMarginBottom"/>
+                    <m:Button id="btnBlog" icon="sap-icon://notes" text = "Blog" press = "onBlogInPress" class="sapUiMediumMarginEnd sapUiSmallMarginBottom"/>
+                    <m:Button id="btnDownloadResume" text="Resume" icon="sap-icon://document-text" press="onResumePress" class="sapUiSmallMarginBottom"/>
                 </m:FlexBox>
                 
             </layout:VerticalLayout>
