@@ -31,6 +31,11 @@ sap.ui.define([
             let oHeaderModel = this.getView().getModel("headerContent");
             let sblogInUrl = oHeaderModel.getProperty("/blog");
             window.open(sblogInUrl, "_blank");
+        },
+
+        onAfterRendering: function () {
+            // Shifts focus away from the button to the main layout container
+            this.getView().byId("gvMainContainer").focus();
         }
 
     });
