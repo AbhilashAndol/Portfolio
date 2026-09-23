@@ -50,6 +50,7 @@ function (JSONModel, Device) {
                 { name: "SAP UI5", percentValue: 70 },
                 { name: "SAP Fiori", percentValue: 70 },
                 { name: "SAP BTP", percentValue: 70 },
+                { name: "SAP HANA Cloud", percentValue: 70 },
                 { name: "Generative AI", percentValue: 65 },
                 { name: "SAP Build Apps", percentValue: 90 },
                 { name: "SAP Build Process Automation", percentValue: 90 }
