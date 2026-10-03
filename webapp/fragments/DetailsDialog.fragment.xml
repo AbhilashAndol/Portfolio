@@ -4,8 +4,17 @@
     <Dialog id="projectDetailsDialog" title="{projects>name}">
         <content>
             <!-- This is where your details live -->
-            <VBox  id="vBoxProjectDetails" class="sapUiSmallMargin">
-                <Text id="txtProjectDescription" text="{projects>description}" />
+            <VBox  id="vBoxProjectDetails" class="sapUiMediumMargin">
+                <Text id="txtProjectDescription" text="{projects>description}" class="sapUiSmallMarginBottom" />
+                <!-- Embedded Video -->
+                <FlexBox id="videoContainer" justifyContent="Center" alignItems="Center" width="100%" visible="{= ${projects>videoName} ? true : false }" >
+                    <core:HTML 
+                        id="projectVideo" 
+                        content='&lt;video width="70%" height="50%" controls&gt;
+                                    &lt;source src="videos/{projects>videoName}" type="video/mp4"&gt;
+                                    Your browser does not support the video tag.
+                                    &lt;/video&gt;' />
+                </FlexBox>
             </VBox>
         </content>
         <beginButton>
