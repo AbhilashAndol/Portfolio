@@ -15,6 +15,23 @@
                                     Your browser does not support the video tag.
                                     &lt;/video&gt;' />
                 </FlexBox>
+
+                <!-- Image Slideshow (Carousel) -->
+                <!-- Visible only if the project has images -->
+                <Carousel 
+                    id="projectImageCarousel" 
+                    width="100%" 
+                    height="300px"
+                    visible="{= ${projects>images} ? true : false }"
+                    pages="{projects>images}">
+                    <pages>
+                        <Image id="image"
+                            src="images/{projects>}" 
+                            densityAware="false"
+                            width="100%" 
+                            height="100%" />
+                    </pages>
+                </Carousel>
             </VBox>
         </content>
         <beginButton>
